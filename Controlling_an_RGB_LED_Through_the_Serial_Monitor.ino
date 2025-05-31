@@ -136,6 +136,10 @@ int serial2(){
   val = Serial.parseInt();
   //va = Serial.parseInt();
 
+  while (Serial.available() > 0) {
+    Serial.read();
+  }
+
   return val;
 }
 
@@ -148,8 +152,7 @@ void serial4(){
 void loop() {
   Serial.flush();
   serial1();
-  Serial.flush();
-  
+    
   //val1 = serial2();
 
 //  while(Serial.available() == 0){
@@ -162,27 +165,21 @@ void loop() {
 
   delay(del);
 
-  Serial.println(" ");
+  Serial.println();
   Serial.print("You chose option: ");
   Serial.println(val1);
 
-  Serial.println(" ");
+  Serial.println();
   Serial.println("Enter the number of iterations");
-  
-  delay(bdel);
-  
+   
   val2 = serial2();
 
-  delay(bdel);
-
-  Serial.println(" ");
+  Serial.println();
   Serial.print("Number of iterations: ");
   Serial.println(val2);
   
   //val2 = serial2();
-  
-  delay(bdel);
-  
+   
   if(val1 == 1){
     
 //    Serial.print("Your iterations: ");
@@ -210,8 +207,6 @@ void loop() {
    
     delay(del);
   }
-
-  delay(bdel);
 
   serial4();
   
