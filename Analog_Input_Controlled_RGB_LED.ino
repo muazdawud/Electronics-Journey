@@ -18,14 +18,14 @@
 //  if(val < LOWER){
 //    digitalWrite(RLED, LOW);
 //    digitalWrite(GLED, LOW);
-//    analogWrite(BLED, val);
+//    digitalWrite(BLED, val);
 //  }else if(val > UPPER){
-//    analogWrite(RLED, val);
+//    digitalWrite(RLED, val);
 //    digitalWrite(GLED, LOW);
 //    digitalWrite(BLED, LOW);
 //  }else{
 //    digitalWrite(RLED, LOW);
-//    analogWrite(GLED, val);
+//    digitalWrite(GLED, val);
 //    digitalWrite(BLED, LOW);
 //  }
 //}
