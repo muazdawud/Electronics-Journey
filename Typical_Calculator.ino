@@ -220,15 +220,15 @@
 //
 //char arr[5];
 //int i = 0;
-//double num = -1LL;
+//double num = -1;
 //
 //char cont[5];
 //int j = 0;
-//double ber = -1LL;
+//double ber = -1;
 //
 //char sign = '\0';
 //
-//double result = -1LL;
+//double result = -1;
 //
 //void setnum1(char val){
 //  if(val == '+' || val == '-' || val == '/' || val == 'x'){
