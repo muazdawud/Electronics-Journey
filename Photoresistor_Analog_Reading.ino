@@ -1,4 +1,5 @@
 //int POT = A1; 
+//int POT = 1; 
 //int val;
 //
 //void setup(){

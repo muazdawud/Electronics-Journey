@@ -39,6 +39,9 @@
 //int nin = B11111111; 
 //int ben = B00000000;
 //int del = 500;
+//int del = 1000;
+//byte byte1 = 0xf0;
+//byte byte2;
 //
 //void setup(){
 //  pinMode(DATA, OUTPUT);
@@ -56,3 +59,25 @@
 //  digitalWrite(LATCH, HIGH);
 //  delay(del);
 //}
+//
+//  Serial.begin(9600);
+//}
+//
+//void loop(){
+//  byte2 = 255-byte1;
+//  
+//  Serial.print(byte1);
+//  Serial.print("\t|");
+//  Serial.print("\t");
+//  Serial.println(byte2);
+//  
+//  digitalWrite(LATCH, LOW);
+//  shiftOut(DATA, CLOCK, LSBFIRST, byte1);
+//  digitalWrite(LATCH, HIGH);
+//  delay(del);
+//  digitalWrite(LATCH, LOW);
+//  shiftOut(DATA, CLOCK, LSBFIRST, byte2);
+//  digitalWrite(LATCH, HIGH);
+//  delay(del);
+//}
+//  
